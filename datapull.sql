@@ -1,3 +1,4 @@
+-- retentions
 call pr_wrk.drop_table ('ltv_retentions');
 create multiset volatile table ltv_retentions, no log
 as(
@@ -196,6 +197,7 @@ primary index (install_dt)
 on commit preserve rows
 ;
 
+-- revenues
 call pr_wrk.drop_table ('ltv_revenues');
 create multiset volatile table ltv_revenues, no log
 as(
